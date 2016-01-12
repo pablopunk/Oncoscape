@@ -6,7 +6,7 @@ default:
 	echo =========== 3
 	R CMD install dataPackages/DEMOdz && R -f dataPackages/DEMOdz/inst/unitTests/test_DEMOdz.R 
 	echo =========== 4
-	R CMD install Oncoscape && (cd Oncoscape/inst/unitTests; R -f test_ChinookServer.R)
+	R CMD install Chinook && (cd Chinook/inst/unitTests; R -f test_ChinookServer.R)
 	echo =========== 5
 	R CMD install analysisPackages/ChinookAnalysis && R -f analysisPackages/ChinookAnalysis/inst/unitTests/test_ChinookAnalysis.R
 	echo =========== 6

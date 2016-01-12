@@ -1,14 +1,13 @@
-Package: ChinookServer
+Package: Chinook
 Type: Package
-Title: ChinookServer:  Support WebSocket and HTTP transmission of simple JSON messages
-Version: 1.0.5
-Date: 2016-01-11
+Title: Chinook: a JSON/web socket framework 
+Version: 1.0.3
+Date: 2016-01-12
 Author: Paul Shannon
-Maintainer:  <pshannon@fhcrc.org>
-Depends: R (>= 3.2.2), jsonlite, httpuv
+Maintainer: Paul Shannon <pshannon@fredhutch.org>
+Depends: R (>= 3.2.2)
+Imports: methods, BiocGenerics
 Suggests: RUnit
-Description:  
-License: GPL
-LazyLoad: yes
-Collate: ChinookServer.R
-
+Description: A framework for developing loosely-coupled, message-passing interactive data exploration webapps
+  using Javascript in the browser, and (initially) R in the server
+License: GPL-2

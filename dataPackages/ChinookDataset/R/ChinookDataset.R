@@ -201,23 +201,17 @@ Dataset.getItemByName <- function(channel, msg)
 
    item.names <- msg$payload
    available.items <- getItemNames(dataset)
-   #printf("ChinookDataset.getItemByName, available.items:")
-   #print(available.items)
-   #printf("   requested items: %s", paste(item.names, collapse=","))
-   #printf("in? %s", item.names[1] %in% available.items)
-   #printf("all in? %s", all(item.names) %in% available.items)
-   #printf("setdiff: %s", setdiff(item.names, available.items))
    stopifnot(all(item.names %in% available.items))
 
    data.list <- vector("list", length=length(item.names))
 
    i <- 0
    for(name in item.names){
-      item <- getItemByName(dataset, name)
+      item <- getItem(dataset, name)
       class <- class(item)
       i <- i + 1
       if(class == "matrix"){
-        matrix <- matrices(dataset)[[name]]
+        matrix <- getItem(dataset, name)
         data.json <- .prepDataframeOrMatrixForJSON(dataset.name, matrix)
         }
       else if(class == "data.frame"){
@@ -225,7 +219,7 @@ Dataset.getItemByName <- function(channel, msg)
         data.json <- .prepDataframeOrMatrixForJSON(dataset.name, df)
         }
       else if(class == "json")
-        data.json <-  getJSON(dataset, name)
+        data.json <-  getItem(dataset, name)
       data.list[[i]] <- data.json
       }
 
