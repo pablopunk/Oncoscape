@@ -19,7 +19,7 @@ Before you can successfully install Oncoscape on a Linux system you will need to
 - gcc
 - g++
 - make
-- nodejs 4.4+
+- nodejs 5.x
 - node-gyp
 - git
 
@@ -61,7 +61,7 @@ Before you can successfully install Oncoscape on a Mac OS X system, you will nee
 
 - R (version 3.2.2+)
 - Xcode command-line tools (provides make, git, etc...)
-- nodejs 4.4+
+- nodejs 5.x 
 - node-gyp
 
 To install the R head over the the CRAN site (https://cran.r-project.org/mirrors.html), pick a mirror site closest to you then download the latest version of R (currently 3.2.3) for Mac OS X and install it. If you are already running the Homebrew package manager, you can alternatively install R as follows:
@@ -99,11 +99,11 @@ After installing the above dependencies on your Mac OS X system, you are ready t
 - 2GB+ free RAM
 - 4GB free disk space
 
-Before you can successfully install Oncoscape on a Mac OS X system you will need to satisfy the following dependencies:
+Before you can successfully install Oncoscape on a Windows system you will need to satisfy the following dependencies:
 
 - R (version 3.2.2+)
 - Cygwin (for make, bash and git)
-- nodejs
+- nodejs 5.x
 - node-gyp
 
 To install the R head over to the CRAN site (https://cran.r-project.org/mirrors.html), pick a mirror site closest to you then download the latest version of R (currently 3.2.3) for Windows and install it. After it's installed make sure that you add the R binaries to your system path (control panel -> system -> advanced system settings -> environment variables -> system variables). If you accepted the defaults, the R binaries will be located at *"C:\Program Files\R\bin"*.
@@ -118,7 +118,7 @@ The above command should bring up the Cygwin installer dialog. Select a mirror c
 
 ***Note:*** after adjusting the system path and defining new system environment variables on Windows, you'll need to exit the console (cmd.exe) and open it again before the updated path and new environment variables will take effect.
 
-To install the latest version of Node.js, visit https://nodejs.org/en/download/ and download the latest Windows node package. After the download is complete, double click on the node-*.msi and install node on your system. 
+To install the latest stable (not LTS) version of Node.js (currently v5.9.1), visit https://nodejs.org/en/download/ and download the latest Windows node package. After the download is complete, double click on the node-*.msi and install node on your system. 
 
 Finally you'll need to install node-gyp. Node-gyp is a tool for compiling native add-on modules for Node.js and is required for the "rstats" add-on that is used interface node with R. To install node-gyp, run the following command:
 
@@ -158,7 +158,7 @@ npm install
 After the node modules are installed, you'll need to install the rstats library with node-gyp as follows:
 
 ```
-cd /<path>/Oncoscape/rstats
+cd /<path>/Oncoscape/server/rstats
 node-gyp configure build 
 ```
 
@@ -176,7 +176,7 @@ git clone https://github.com/FredHutch/Oncoscape.git
 After the git clone is complete, switch to the r_modules sub directory where Oncoscape was downloaded and build them with the "make install" command as shown below:
 
 ```
-cd c:\<path>\Oncoscape
+cd c:\<path>\Oncoscape\r_modules
 make install
 ```
 
@@ -190,7 +190,7 @@ npm install
 After the node modules are installed, you'll need to install the rstats library with node-gyp as follows:
 
 ```
-cd c:\<path>\Oncoscape/rstats
+cd c:\<path>\Oncoscape\server\rstats
 node-gyp configure build 
 ```
 
