@@ -99,7 +99,7 @@ After installing the above dependencies on your Mac OS X system, you are ready t
 
 ### Windows System Requirements and Dependencies 
 
-Oncoscape can't currently run natively on Windows due to some Unix only components. To run Oncoscape on Windows, you must either use a hypervisor such as VirtualBox, Hyper-V or VMware and run Oncoscape in a Linux VM or you can run it in a Docker container using the Docker Toolbox for Windows.
+***Note:***  Oncoscape can't currently run natively on Windows due to some Unix only components. To run Oncoscape on Windows, you must either use a hypervisor such as VirtualBox, Hyper-V or VMware and run Oncoscape in a Linux VM or you can run it in a Docker container using the Docker Toolbox for Windows.
 
 ## 2. Installing Oncoscape
 
@@ -148,6 +148,11 @@ After you've installed all required dependencies and installed Oncoscape as desc
 cd /<path>/Oncoscape
 node start.js
 ```
+
+After the Oncoscape application has started, open a web browser and navigate to http://localhost to access Oncoscape. If you are running Oncoscape on a remote server, you'll need open a web browser and navigate to the Oncoscape application replacing "yourservername.com" with the name of the server where Oncoscape is running.
+
+> http://yourservername.com
+
 
 ## 4. Running and Developing Oncoscape with Docker
 
