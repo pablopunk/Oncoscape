@@ -91,7 +91,7 @@ brew install node
 Finally you'll need to install node-gyp. Node-gyp is a tool for compiling native add-on modules for Node.js and is required for the "rstats" add-on that is used interface node with R. To install node-gyp, run the following command:
 
 ```bash
-npm install -g node-gyp
+sudo npm install -g node-gyp
 ```
 
 After installing the above dependencies on your Mac OS X system, you are ready to build the Oncoscape application.
