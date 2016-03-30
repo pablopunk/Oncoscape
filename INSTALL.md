@@ -110,6 +110,8 @@ The first thing that you'll need to do is download the Oncoscape application sou
 ```bash
 cd /<path>
 git clone https://github.com/FredHutch/Oncoscape.git
+cd Oncoscape
+git checkout develop
 ```
 
 After the git clone is complete, switch to the r_modules sub directory where Oncoscape was downloaded and build them with the "sudo make install" command as shown below:
