@@ -99,7 +99,7 @@ After installing the above dependencies on your Mac OS X system, you are ready t
 
 ### Windows System Requirements and Dependencies 
 
-***Note:***  Oncoscape can't currently run natively on Windows due to some Unix only components. To run Oncoscape on Windows, you must either use a hypervisor such as VirtualBox, Hyper-V or VMware and run Oncoscape in a Linux VM or you can run it in a Docker container using the Docker Toolbox for Windows.
+***Note:***  Oncoscape will not currently run natively on Windows due to some Unix only components that are being used. To run Oncoscape on Windows, you must either use a hypervisor such as VirtualBox, Hyper-V or VMware and run Oncoscape in a Linux VM or you can run it in a Docker container using the Docker Toolbox for Windows.
 
 ## 2. Installing Oncoscape
 
