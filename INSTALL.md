@@ -147,8 +147,17 @@ You are now ready to run Oncoscape.
 After you've installed all required dependencies and installed Oncoscape as described above, you are now ready to run Oncoscape. You can run Oncoscape by executing the following commands:
 
 ```
-cd /<path>/Oncoscape
-node start.js
+cd /<path>/Oncoscape/server
+sudo node start.js
+```
+
+The output from the above command shoud look like the following:
+
+```
+SockJS v0.3.16 bound to "/oncoscape"
+Http Server Started On: 3000
+Socket Server Started On: 3001
+Proxy Server Started On: 80
 ```
 
 After the Oncoscape application has started, open a web browser and navigate to http://localhost to access Oncoscape. If you are running Oncoscape on a remote server, you'll need open a web browser and navigate to the Oncoscape application replacing "yourservername.com" with the name of the server where Oncoscape is running.
